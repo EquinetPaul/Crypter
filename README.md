@@ -1,1 +1,3 @@
-> :warning: **If you are using mobile browser**: Be very careful here!
+# XOR ENCRYPT FILES
+
+> :warning: **DO NOT USE ON . REPOSITORY**:
