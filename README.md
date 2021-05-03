@@ -1,3 +1,3 @@
 # XOR ENCRYPT FILES
 
-> :warning: **DO NOT USE ON . REPOSITORY**:
+> :warning: **DO NOT USE ON "." REPOSITORY**:
